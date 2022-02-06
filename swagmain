@@ -11573,7 +11573,7 @@ ModIDS = {
     }
 
 --\\ Don't mess with anything below this
-function swagnames()
+function rottennames()
 	for _,Player in pairs(game:GetService('Players'):GetChildren()) do
 		if table.find(ModIDS, Player.UserId) then
 			if Player.Character then
@@ -11613,5 +11613,5 @@ function swagnames()
 	end
 	end
 	end
-local success,err = pcall(swagnames)
+local success,err = pcall(rottennames)
 return ModIDS
